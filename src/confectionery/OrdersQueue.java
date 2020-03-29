@@ -73,7 +73,7 @@ public class OrdersQueue<T> implements SyncQueue<T> {
 		} 
 	}
 
-	public boolean isOpen() {
+	public synchronized boolean isOpen() {
 		return open;
 	}
 	

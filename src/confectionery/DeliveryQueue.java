@@ -76,7 +76,7 @@ public class DeliveryQueue<T> implements SyncQueue<T>{
 		return threadsPool;
 	}
 
-	public boolean isOpen() {
+	public synchronized boolean isOpen() {
 		return open;
 	}
 }

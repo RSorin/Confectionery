@@ -33,7 +33,7 @@ public class Delivery {
 		}
 	}
 
-	public Order getOrder() {
+	public synchronized Order getOrder() {
 		return order;
 	}
 	
